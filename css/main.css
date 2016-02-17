@@ -1,0 +1,180 @@
+/* retoques html */
+html {
+    width:100%;
+    margin:0;
+    padding:0;
+    
+}
+
+/* For width smaller than 400px: */
+
+/* cuerpo pagina */
+body {
+    width:100%;
+    margin:0;
+    padding:0;
+    background:url("../img/backMovile.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* For width 848px and larger: */
+@media only screen and (min-width: 848px) {
+    /* cuerpo pagina */
+    body {
+        background:url("../img/back2.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+
+
+
+
+/* cabecera de la pagina */
+
+#title {
+    text-align:center;
+}
+#title #t1 img {
+    width:90%;
+}
+
+#title #t2 img {
+    width:100%;
+}
+
+#title #t1 {
+    display:none;
+}
+
+#title #t2 {
+    display:block;
+    text-align:center;
+}
+
+/* For width 800px and larger: */
+@media only screen and (min-width: 800px) {
+    /* cabecera de la pagina */
+    #title #t1 {
+        text-align:center;
+        display:inline;
+    }
+
+    #title #t2 {
+        display:none;
+        text-align:center;
+    }
+}
+
+/* fonts */
+@font-face {
+    font-family: pac;
+    src: url(../font/pacfont/Pacmania.ttf);
+    font-weight:400;
+}
+
+/* pacman */ 
+    
+#pacman {
+    background-color:black;
+    width:100%;
+    text-align:left;
+}
+
+#pacman img {
+    width:5%;
+    display:none;
+}
+
+#bichos {
+    position:relative;
+    left:95%;
+}
+
+
+/* contenido */
+#content {
+    width:90%;
+    height:10%;
+    margin:5%;
+}
+
+.cajaPractica {
+    width:19%;
+    margin:2.5%;
+    margin-bottom:5%;
+    /*border:solid white 1px;*/
+    float:left;
+    background-color:black;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.imagenPracticaContainer {
+    text-align:center;
+}
+
+
+.imagenPractica {
+    width:50%;	
+    /* Firefox */
+	-moz-transition: all 1s ease;
+	/* WebKit */
+	-webkit-transition: all 1s ease;
+	/* Opera */
+	-o-transition: all 1s ease;
+	/* Standard */
+	transition: all 1s ease;
+}
+
+
+
+.imagenPractica:hover {
+	opacity: 1;
+	
+	/* Firefox */
+	-moz-transform: scale(1.5) rotateY(360deg) translate(30px);
+	/* WebKit */
+	-webkit-transform: scale(1.5) rotateY(360deg) translate(30px);
+	/* Opera */
+	-o-transform: scale(1.5) rotateY(360deg) translate(30px);
+	/* Standard */
+	transform: scale(1.5) rotateY(360deg) translate(30px);
+	
+	z-index: 1000;
+}
+.nombrePractia {
+
+	text-align:center;
+    color:black;
+    font-family:pac;
+    font-size:1em;
+    background-color:white;
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.nombrePractia span {
+    font-family:"Arial";
+    font-weight:bold;
+    font-size:0.9em;
+}
+
+/* footer */ 
+
+#footer {
+position:absolute;
+bottom:10px;
+right:50px;
+}
+
+
+}
